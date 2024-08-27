@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Networking Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading" >
+        <h1 id="title">Social Networking Survey</h1>
+        <p id="description">Help us understand your social media habits! This short survey will gather insights into how often you use social networking websites and apps. Your feedback will help us improve our understanding of online engagement. Share your thoughts and experiences below!</p>
+    </div>
+    <div class="main">
+        <form id="survey-form">
+            <div class="input-fields">
+                <label id="name-label" for="name">Name :</label>
+                <input id="name" type="name" class="form" required placeholder="Full Name"/>
+
+                <label id="email-label" for="email">Email :</label>
+                <input id="email" type="email" class="form" required placeholder="example@email.com"/>
+
+                <label id="number-label" for="number">Age :</label>
+                <input id="number" type="number" class="form" min="12" max="120" required placeholder="Full Name"/>
+
+                <p>Gender :<p>
+                <input id="gender" type="radio" value="male" name="gender" class="radio-button" required/><span style="text-transform: none;">Male</span>
+                <input id="gender" type="radio" value="female" name="gender" class="radio-button" required/><span style="text-transform: none;">Female</span>
+                
+                <p id="usage-p">On average, how many hours per week do you spend using social networking websites ?</p>
+                <select id="dropdown" class="form" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="40+">40+ hours</option>
+                    <option value="30-39">30-39 hours</option>
+                    <option value="10-19">10-19 hours</option>
+                    <option value="0-10">Less than 10 hours</option>
+                </select>
+
+                <p id ="apps-p">Which of the following social networking websites / apps do you currently have an account with?<br>(Check all that apply)</p>
+                <label class="apps-label"><input name="apps" value="facebook" type="checkbox" class="input-checkbox" />Facebook</label>
+                <label class="apps-label"><input name="apps" value="instagram" type="checkbox" class="input-checkbox" />Instagram</label>
+                <label class="apps-label"><input name="apps" value="discord" type="checkbox" class="input-checkbox" />Discord</label>
+                <label class="apps-label"><input name="apps" value="reddit" type="checkbox" class="input-checkbox" />Reddit</label>
+                <label class="apps-label"><input name="apps" value="reddit" type="checkbox" class="input-checkbox" />Telegram</label>
+                <label class="apps-label"><input name="apps" value="reddit" type="checkbox" class="input-checkbox" />Twitter (now known as X)</label>
+
+                <p id ="textarea">If you could create your own social media platform, what unique features would you include?</p>
+                <textarea id ="input-textarea" name="text" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+        <div class="submit-btn">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
