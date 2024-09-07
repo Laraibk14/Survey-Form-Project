@@ -1,0 +1,154 @@
+.oswald-style {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.background{
+    background: url(khabib.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    z-index: -1;
+    filter: brightness(0.15);
+}
+
+.header{
+    padding: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+#main{
+    margin: auto 7rem auto 7rem;
+}
+
+#name-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.heading-header{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.title{
+    display: inline;
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: rgb(255, 46, 46);
+    white-space: nowrap;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: opacity(0.9);
+    box-shadow: 0 0 200px 3px #ffffff;
+}
+
+#img-caption{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.intro-heading{
+    margin-top: 3.5rem;
+}
+
+.heading {
+    color: rgb(255, 46, 46);
+    font-size: 4.5rem;
+    text-decoration: underline;
+}
+
+.content {
+    margin: 3rem auto;
+    font-size: 2.5rem;
+}
+
+p{
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+#footer{
+    margin-top: 5rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgb(83, 83, 83);
+    opacity: 0.85;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (min-width:609px) and (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+
+    .main {
+        margin: auto 3rem;
+    }
+    #image {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:488px) and (max-width:608px) {
+    html{
+        font-size: 40%;
+    }
+
+    .main {
+        margin: auto 3rem;
+    }
+    #image {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:330px) and (max-width:487px) {
+    html{
+        font-size: 30%;
+    }
+
+    .main {
+        margin: auto 3rem;
+    }
+    #image {
+        width: 70%;
+    }
+}
+
